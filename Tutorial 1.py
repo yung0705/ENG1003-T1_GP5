@@ -11,8 +11,10 @@ def function3():
 
 
 def function4():
-    print('This text represent the content of function 4')  #To be edited by member 4, Replace this line with your actual function code
-
+    (a,b)=(5,4)
+    print("a = ",a," b = ",b)
+    if a>b:
+        print("a is larger than b")
 
 #The Main function edited by Group leader
 print('This is ENG1003'' Week 1 Tutorial Programming Task')
