@@ -7,7 +7,8 @@ def function2():
 
 
 def function3():
-    print('This text represent the content of function 3')  #To be edited by member 3, Replace this line with your actual function code
+    a=5
+    print("a=",a,"Square of a:", a**2)
 
 
 def function4():
