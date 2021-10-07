@@ -12,10 +12,11 @@ def function3():
 
 
 def function4():
-    (a,b)=(5,4)
-    print("a = ",a," b = ",b)
-    if a>b:
-        print("a is larger than b")
+    x = int(input("Square Size:"))
+    for num in range(x): 
+        for num in range(x): 
+            print("[]",end="")
+        print()
 
 #The Main function edited by Group leader
 print('This is ENG1003'' Week 1 Tutorial Programming Task')
