@@ -30,4 +30,5 @@ elif inp == '3':
 elif inp == '4':
     function4()
 else:
-    print('There is no function', inp)
+    print('There is no function. Please enter(1-4)')
+
