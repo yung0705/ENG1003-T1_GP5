@@ -1,20 +1,22 @@
 def function1():
-    print('This text represent the content of function 1')  #To be edited by member 1, Replace this line with your actual function code
-    
+    x = int(input("Height: "))
+    for num in range(x):
+        print("XXX")
 
 def function2():
-    print('This text represent the content of function 2')  #To be edited by member 2, Replace this line with your actual function code
-
-
+    a = int(input('First number: '))
+    b = int(input('Second number: '))
+    print('The sum is',a+b)
+    
 def function3():
-    a=5
-    print("a=",a,"Square of a:", a**2)
-
+    y = int(input("List length: "))
+    for num in range(y):
+        print(y-num)
 
 def function4():
-    x = int(input("Square Size:"))
-    for num in range(x): 
-        for num in range(x): 
+    z = int(input("Square Size:"))
+    for num in range(z): 
+        for num in range(z): 
             print("[]",end="")
         print()
 
