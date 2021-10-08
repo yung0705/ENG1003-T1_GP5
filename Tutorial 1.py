@@ -7,11 +7,11 @@ def function2():
     a = int(input('First number: '))
     b = int(input('Second number: '))
     print('The sum is',a+b)
+    
 def function3():
     x = int(input("List length: "))
-for num in range(x):
-    print(x-num)
-
+    for num in range(x):
+        print(x-num)
 
 def function4():
     x = int(input("Square Size:"))
