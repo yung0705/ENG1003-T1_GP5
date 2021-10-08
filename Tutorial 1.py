@@ -4,9 +4,9 @@ def function1():
         print("XXX")
 
 def function2():
-    print('This text represent the content of function 2')  #To be edited by member 2, Replace this line with your actual function code
-
-
+    a = int(input('First number: '))
+    b = int(input('Second number: '))
+    print('The sum is',a+b)
 def function3():
     a=5
     print("a=",a,"Square of a:", a**2)
