@@ -9,14 +9,14 @@ def function2():
     print('The sum is',a+b)
     
 def function3():
-    x = int(input("List length: "))
-    for num in range(x):
-        print(x-num)
+    y = int(input("List length: "))
+    for num in range(y):
+        print(y-num)
 
 def function4():
-    x = int(input("Square Size:"))
-    for num in range(x): 
-        for num in range(x): 
+    z = int(input("Square Size:"))
+    for num in range(z): 
+        for num in range(z): 
             print("[]",end="")
         print()
 
