@@ -1,6 +1,7 @@
 def function1():
-    print('This text represent the content of function 1')  #To be edited by member 1, Replace this line with your actual function code
-    
+    x = int(input("Height: "))
+    for num in range(x):
+        print("XXX")
 
 def function2():
     print('This text represent the content of function 2')  #To be edited by member 2, Replace this line with your actual function code
