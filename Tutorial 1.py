@@ -8,8 +8,9 @@ def function2():
     b = int(input('Second number: '))
     print('The sum is',a+b)
 def function3():
-    a=5
-    print("a=",a,"Square of a:", a**2)
+    x = int(input("List length: "))
+for num in range(x):
+    print(x-num)
 
 
 def function4():
