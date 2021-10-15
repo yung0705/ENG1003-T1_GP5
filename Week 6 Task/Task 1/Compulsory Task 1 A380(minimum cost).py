@@ -48,13 +48,13 @@ class AStarPlanner:
 
         ############you could modify the setup here for different aircraft models (based on the lecture slide) ##########################
         self.C_F = 1
-        self.Delta_F = 1.5
-        self.C_T = 3
+        self.Delta_F = 1
+        self.C_T = 2
         self.Delta_T = 5
         self.C_C = 10
         
-        self.Delta_F_A = 0.3 # additional fuel
-        self.Delta_T_A = 0.4 # additional time 
+        self.Delta_F_A = 0.2 # additional fuel
+        self.Delta_T_A = 0.2 # additional time 
         
         
 
