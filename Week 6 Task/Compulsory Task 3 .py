@@ -162,6 +162,10 @@ class AStarPlanner:
                         node.cost = node.cost + self.Delta_F_A * self.motion[i][2]
                     # print()
                 
+                if self.calc_grid_position(node.x, self.min_x) in self.minus_cost_x:
+                    if self.calc_grid_position(node.y, self.min_y) in self.minus_cost_y:
+                        node.cost = node.cost - self.Delta_P * self.motion[i][2]
+
                 n_id = self.calc_grid_index(node)
 
                 # If the node is not safe, do nothing
@@ -366,8 +370,8 @@ def main():
             tc_y.append(j)
 
     minus_cost_x , minus_cost_y = [], []
-    for i in range(36,60):
-        for j in range(10,20):
+    for i in range(37,38):
+        for j in range(29,45):
             minus_cost_x.append(i)
             minus_cost_y.append(j)
 
