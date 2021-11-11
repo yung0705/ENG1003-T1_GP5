@@ -168,3 +168,5 @@ else:
     print('There is no function. Please enter(1-5)')
 ```
 In main function, I have to create a main function so that we can call that particular function directly. For preventing error, I renamed the variables which appear in different functions at the same time.
+
+## 5.Compulsory Task 1
