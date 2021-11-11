@@ -20,6 +20,28 @@ def function4():
             print("[]",end="")
         print()
 
+def function5():
+    import random
+    print("Number Guessing Game")
+    lower = 1
+    upper = random.randint(50,200)
+    print("The range for this round is ",lower,"-",upper)
+    c = random.randint(lower, upper)
+    attempts = 0
+    guess = 0
+    while c != guess:	
+        guess = int(input("Make a guess : "))
+        if c > guess:
+            lower = guess
+            print("The range is now ",lower,"-",upper)
+            attempts = attempts + 1
+        if c < guess:
+            upper = guess
+            print("The range is now ",lower,"-",upper)
+            attempts = attempts + 1
+    else:
+    	attempts = attempts + 1
+    	print("BINGO! You took ",attempts," attempts to reach the answer!")
 #The Main function edited by Group leader
 print('This is ENG1003'' Week 1 Tutorial Programming Task')
 inp = input('Enter the function number to be executed: ')   #Ask for an integer
@@ -32,5 +54,7 @@ elif inp == '3':
     function3()
 elif inp == '4':
     function4()
+elif inp == '5':
+    function5()
 else:
     print('There is no function. Please enter(1-4)')
