@@ -2,7 +2,7 @@
 GitHub Readme.md Report
 
 ## 1.Background of path planning
-
+### LAW Wai Wah's part
 ## 2.Theory of Path Planning Algorithm
 Path planning has three components: spatial representation, search algorithm and heuristic algorithm.
 
@@ -173,6 +173,7 @@ In main function, I have to create a main function so that we can call that part
 ### Methodology：
 In this task, we need to find the PolyU Aircraft Model (PolyU-A380, PolyU-A381, PolyU-A382, PolyU-A383) that achieves minimum cost with the respective map.As data shown below:
 ![圖片1](https://user-images.githubusercontent.com/89887457/141405572-049e1a17-8caa-464e-84fd-c3c1660ffe5c.png)![圖片2](https://user-images.githubusercontent.com/89887457/141405616-f65577f8-ebe4-48e2-9434-c7c33bfd5e97.png)
+
 #### Starting point and goal node：
 According to the map shown above, “S” indicates the starting point of the airplane where the plane takes off, which is (0, 50) in coordinate form. Therefore, we have input the “sx” (x-coordinate of starting point) as 0 and “sy” (y-coordinate of starting point) as 50; Identically, “E” indicates the goal note of the airplane where the airplane lands, which is (50, -5) in coordinate form. Therefore, we have input the “gx” (x-coordinate of goal point) as 50 and “gy” (y-coordinate of goal point) as -5.
 ```
@@ -216,29 +217,113 @@ The time consumption area is created by the code below:
 ```
 ![螢幕擷取畫面 2021-11-12 125446](https://user-images.githubusercontent.com/89887457/141411951-7f39e5c7-81b3-46d9-8db8-a3a8c0f17ff4.png)
 
-
 Their code are similar to the code of the border. The main difference is that there is one more "for-loop". So the programe can generate continuous dots in two directions to make a rectangle.
 
 #### Aircraft Models
-In this task, we also need to find out which type of model aircraft achieves the minimum flight cost. In the A-Star Path Planning Algorithm, there are 7 variables which will affect the total flight cost. They are C_F, Delta_F, C_T, Delta_T, C_C, Delta_F_A, Delta_T_A. So, we need to change those variables to match the different aircraft models.
+In this task, we also need to find out which type of model aircraft achieves the minimum flight cost. In the A-Star Path Planning Algorithm, there are 7 variables which will affect the total flight cost. They are "C_F", "Delta_F", "C_T", "Delta_T", "C_C", "Delta_F_A", "Delta_T_A". So, we need to change those variables to match the different aircraft models.
+![圖片4](https://user-images.githubusercontent.com/89887457/141427285-9c36cb67-7024-411c-9985-be1984a62969.png)
 
+##### For PolyU-A380
+```
+self.C_F = 1
+self.Delta_F = 1
+self.C_T = 2
+self.Delta_T = 5
+self.C_C = 10
+        
+self.Delta_F_A = 0.2
+self.Delta_T_A = 0.2
+```
+##### For PolyU-A381
+```
+self.C_F = 1
+self.Delta_F = 1.5
+self.C_T = 3
+self.Delta_T = 5
+self.C_C = 10
+        
+self.Delta_F_A = 0.3
+self.Delta_T_A = 0.4
+```
+##### For PolyU-A382
+```
+self.C_F = 1
+self.Delta_F = 2
+self.C_T = 4
+self.Delta_T = 5
+self.C_C = 10
+        
+self.Delta_F_A = 0.4
+self.Delta_T_A = 0.5
+```
+##### For PolyU-A383
+```
+self.C_F = 1
+self.Delta_F = 2.5
+self.C_T = 5
+self.Delta_T = 5
+self.C_C = 10
+        
+self.Delta_F_A = 0.5
+self.Delta_T_A = 0.1
+```
 ### Result：
+After we input the above value, we can get the total cost of among four different types of aircraft models:
+PolyU-A380: Total flight cost = 3356.469824904021
+![2021-11-12 (10)](https://user-images.githubusercontent.com/89887457/141428888-a08b0e68-a6a4-45f8-b95a-9d6097e79883.png)
+PolyU-A381: Total flight cost = 4236.151346762756
+![2021-11-12 (9)](https://user-images.githubusercontent.com/89887457/141428692-91fcc864-2dd5-4e57-908a-b8adbe00831d.png)
+PolyU-A382: Total flight cost = 5115.8328686214945
+![2021-11-12 (11)](https://user-images.githubusercontent.com/89887457/141429034-3bf58ebe-2a0f-46d9-9e9a-490863e65f4b.png)
+PolyU-A383: Total flight cost = 5995.514390480228
+![2021-11-12 (12)](https://user-images.githubusercontent.com/89887457/141429269-c2501679-610d-451d-aedd-ccd04942a9ed.png)
 
 ### Discussion：
+We faced a problem that our program did not show the fuel consumption area, as we have inputted the data from the left upper corner (15,40) to the right bottom corner (30,20). However, In the language of python, it assumes that the user should put the data (coordinate) from lowest to highest (from left bottom to right upper). Therefore, we cannot get the predicted outcomes. We tried several times and figured out that the rules of entering data. So, we input (15,30) and (20,40) instead of (15,40) and (30,20). Then the area appeared.
 
 ## 6.Compulsory Task 2.1
 ### Methodology：
+The main goal for this task is to find the data about "Cf" and "Ct" to obtain the minimum cost for the PolyU-A380 aircraft model.
 
+The constraints of the data are:
+
+**Ct-Cf≤30**
+
+**-0.5Ct-Cf≤-30**
+
+**2Ct-Cf≥20**
+
+**-4Ct-Cf≥-220**
+
+So, using the Linear programming method, we can draw a graph and find the region that satisfies the condition. For the cost function, we can search for the appropriate "Ct" and "Cf" in the region to make the C minimize.
 ### Result：
+After finishing the graph, we find that "Cf" must be 20 and "Ct" must be 20. In this condition, the minimum cost is 33602.88201522425
+![2021-11-12 (13)](https://user-images.githubusercontent.com/89887457/141431633-0def44be-be20-479a-966c-c800ded781bb.png)
 
 ### Discussion：
+After discussing this data, our group thinks it is actually the final goal.
 
 ## 7.Compulsory Task 2.2
 ### Methodology：
+In this task, we should find six figures to find the minimum cost. The constraints of these data are shown below.
 
+**Cf∆𝐹+Ct∆T≥25** 
+
+**Cf+Ct≥10**
+
+**∆𝐹+∆T≥10**
+
+**∆𝐹a+∆𝑇a≥10**
+
+**All variables>0,integer**
+
+We can Combine this with C=Cf*(∆𝐹+∆𝐹a)+Ct*(∆𝑇+∆𝑇a)+Cc, then the final goal will be found.
 ### Result：
+After analyzing these functions, we let **Cf=2, ∆𝐹=8, Ct=1, ∆𝑇=9, ∆𝐹a=1, ∆𝑇a=9**. In this condition, the minimum cost is 5602.601656214276
+![2021-11-12 (15)](https://user-images.githubusercontent.com/89887457/141433475-4342e5b8-162e-4607-b855-eea36d4e9069.png)
 
 ### Discussion：
+We think that this task is much more difficult than the task 2.1. So, we try more figures to satisfy these constraints. The method maybe not be serious, but we think these data maybe be the final goals.
 
 ## 8.Compulsory Task 3
 ### Methodology：
