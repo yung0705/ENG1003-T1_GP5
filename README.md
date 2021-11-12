@@ -2,6 +2,7 @@
 GitHub Readme.md Report
 ## Presentation
 https://drive.google.com/file/d/1njAntgKOZxLf-Ph7eNCHOChekKgX-NRb/view?usp=sharing
+https://youtu.be/GtP9IKx2jq4
 <!-- TABLE OF CONTENTS -->
 <details open="open">
   <summary><h2 style="display: inline-block">Table of Contents</h2></summary>
@@ -416,7 +417,7 @@ In this task, I have finished the one which included two questions (2.1 & 2.2) w
 What is more, from this program, not only that we learned how to use the app such as VScode and GitHub, but we learnt that how to cooperate with my groupmates to find the answer together. Thanks to my groupmates. That is the most important way to solve this problem.
 
 ### LAW Wai Wah
-In this freshman project, I contributed tutorial tasks and wrote the background of aeronautical engineering path planning. This gives me the opportunity to learn programming code and other soft skills, such as working with teammates.
+In this freshman project, I contributed tutorial tasks and wrote the background of path planning to aviation engineering. This gives me the opportunity to learn programming code and other soft skills, such as working with teammates.
 
 First of all, this project has cultivated my ability to solve problems. When I encounter an error while writing code, I must find a way to find the omission. Because there is no solution in the handout. Therefore, I had to search for resources on the Internet through Google and ask the team members for help. I also learned to use a powerful resource called GitHub, where we can use other people's coding. In addition, when writing the background of path planning, I also understood the basic common sense and purpose of path planning. I also know that in today's aviation industry, it is used in major companies to reduce risks for carrying passengers.
 
