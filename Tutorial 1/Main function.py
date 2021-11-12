@@ -1,4 +1,3 @@
-#The Main function edited by Group leader
 print('This is ENG1003'' Week 1 Tutorial Programming Task')
 inp = input('Enter the function number to be executed: ')   #Ask for an integer
 
@@ -10,5 +9,7 @@ elif inp == '3':
     function3()
 elif inp == '4':
     function4()
+elif inp == '5':
+    function5()
 else:
     print('There is no function. Please enter(1-4)')
