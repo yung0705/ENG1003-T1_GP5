@@ -3,9 +3,15 @@ GitHub Readme.md Report
 <!-- TABLE OF CONTENTS -->
 <details open="open">
   <summary><h2 style="display: inline-block">Table of Contents</h2></summary>
-    <li><a href="## 1.Background of path planning">Background of path planning</a></li>
-    <li><a href="## 2.Theory of Path Planning Algorithm">Theory of Path Planning Algorithm</a></li>
-    <li><a href="## 9.Reflective Essay">Introduction of the Engineering Tools </a></li>
+    <li><a href="README.md#1background-of-path-planning">1.Background of path planning</a></li>
+    <li><a href="README.md#2theory-of-path-planning-algorithm">2.Theory of Path Planning Algorithm</a></li>
+    <li><a href="README.md#3introduction-of-the-engineering-tools">3.Introduction of the Engineering Tools</a></li>
+    <li><a href="README.md#4tutorial-task">4.Tutorial Task</a></li>
+    <li><a href="README.md#5compulsory-task-1">5.Compulsory Task 1</a></li>
+    <li><a href="README.md#6compulsory-task-21">6.Compulsory Task 2.1</a></li>
+    <li><a href="README.md#7compulsory-task-22">7.Compulsory Task 2.2</a></li>
+    <li><a href="README.md#8compulsory-task-3">8.Compulsory Task 3</a></li>
+    <li><a href="README.md#9reflective-essay">9.Reflective Essay</a></li>
   </ol>
 </details>
 
