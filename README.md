@@ -220,7 +220,8 @@ The time consumption area is created by the code below:
 Their code are similar to the code of the border. The main difference is that there is one more "for-loop". So the programe can generate continuous dots in two directions to make a rectangle.
 
 #### Aircraft Models
-In this task, we also need to find out which type of model aircraft achieves the minimum flight cost. In the A-Star Path Planning Algorithm, there are 7 variables which will affect the total flight cost. They are C_F, Delta_F, C_T, Delta_T, C_C, Delta_F_A, Delta_T_A. So, we
+In this task, we also need to find out which type of model aircraft achieves the minimum flight cost. In the A-Star Path Planning Algorithm, there are 7 variables which will affect the total flight cost. They are C_F, Delta_F, C_T, Delta_T, C_C, Delta_F_A, Delta_T_A. So, we need to change those variables to match the different aircraft models.
+
 ### Result：
 
 ### Discussion：
@@ -271,9 +272,9 @@ plt.plot(minus_cost_x, minus_cost_y, "ob")
 . The first code is about the size and the location of the area.  "i" is x coordinate, and "j" is y coordinate. The maximum size of the area is limited, 16 grid points, and for the best location of the area so the range of "i" and "j" need to be designed. After trial and error, 37 to 38 seem suitable to be the range of "i", 29 to 45 seem suitable to be the range of "j". The second code is necessary for printing the area on the map. It can also design the pattern and color of the area. In the end, A blue minus-cost area is shown on the map, and when the aircraft goes through the area, the cost will be reduced.
 
 ### Result：
-After designed a suitable location for the minus-cost area to make it minimizes the cost as much as possible. The cost from 3379.380084614466 
+After designed a suitable location for the minus-cost area to make it minimizes the cost as much as possible. The cost from 3356.469824904021
 ![2021-11-12 (1)](https://user-images.githubusercontent.com/89887457/141403346-33105142-4a8e-4adf-82e9-7df8434566a4.png)
-decreased to 2708.537372139845
+decreased to 2685.6271124294003
 ![2021-11-12](https://user-images.githubusercontent.com/89887457/141403338-971fbe20-4699-4166-b3f6-975cb3c5b51b.png)
 
 ### Discussion：
