@@ -17,7 +17,12 @@ GitHub Readme.md Report
 </details>
 
 ## 1.Background of path planning
-### LAW Wai Wah's part
+Path planning is an important primitive of autonomous mobile robots, which allows the robot to find the shortest or best path between two points. In aviation engineering, it also occupies a very important position, such as reducing fuel costs and passenger risks. 
+
+Path planning requires the environment map and the robot to understand its position relative to the map. We now assume that the robot can locate itself, be equipped with a map, and be able to avoid temporary obstacles on the way. When designing a route, you must also understand how to create a map, how to locate the robot, and how to deal with uncertain location information. One of the earliest and simplest algorithms is Dijkstra's algorithm. Starting from the initial vertex where the path should start, the algorithm marks all direct neighbors of the initial vertex with the cost of getting there. Then it continues from the vertex with the lowest cost to all its neighboring vertices, and if the cost is lower, it marks them as the cost of reaching them by themselves. Once all neighbors of the vertex have been checked, the algorithm will continue to the vertex with the next lowest cost. Once the algorithm reaches the target vertex, it terminates and the robot can proceed along the edge that points to the lowest edge cost. 
+
+The Dijkstra algorithm is one of the most commonly used path planning algorithms and is also applied to route planning. This is also one of the necessary knowledge we learned in the course.
+
 ## 2.Theory of Path Planning Algorithm
 Path planning has three components: spatial representation, search algorithm and heuristic algorithm.
 
