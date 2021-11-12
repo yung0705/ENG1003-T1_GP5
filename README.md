@@ -416,6 +416,13 @@ First of all, this project has cultivated my ability to solve problems. When I e
 Secondly, I also used the code editing tool Visual Studio Code in this project to learn the programming language python. Although I still cannot fully understand the details of a star program code, I can find and modify it on GitHub. This ability to solve problems is even more important. In addition, when I work with my teammates and finish the code, I understand the importance of teamwork. I received a lot of help from my team members and I am very grateful to them.
 
 ### LUK Man Chun
+In this AAE freshman project, I have done functions 4 and 5 of the tutorial task, and compulsory task 3. In the past 11 weeks, I learned a lot.
+
+First, I gained many chances to improve my programming skills. I learned a new programe language, Python, and software, Visual Studio Code. This is my first time using them. When I was doing the task, errors often came out. I need to check the code, again and again, to find out the problem and then debug it. Especially in compulsory task 3. I am not only changing the numbers but also adding some new code. Therefore understanding the code is necessary for preventing errors and incorrect outcomes. My logical thinking and problem-solving skills are enhanced after this project.
+
+Second, I learned about how to use Github which is a platform containing various programming information. There are many useful codes and tutorials. For example, in this project, we need to use a  path planning algorithm called "a-star" which is designed by others on Github. All of our compulsory tasks are based on this algorithm. Also, Github is a good place for doing group work. It provides a place for us to manage all files and share work.
+
+Finally, teamwork is also one of my gains. In this project, I work with students who come from different departments, such as AAE.
 
 ## 10.References
  - 石湖一叶, 路径规划基本理论, 2019. [Online]. Available:https://blog.csdn.net/CHN_ZHero/article/details/90286724 [Accessed: October 15, 2021]
