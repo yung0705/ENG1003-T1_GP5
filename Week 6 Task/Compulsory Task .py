@@ -53,8 +53,8 @@ class AStarPlanner:
         self.Delta_T = 5
         self.C_C = 10
         
-        self.Delta_F_A = 2 # additional fuel
-        self.Delta_T_A = 5 # additional time 
+        self.Delta_F_A = 0.2 # additional fuel
+        self.Delta_T_A = 0.5 # additional time 
         
         
 
