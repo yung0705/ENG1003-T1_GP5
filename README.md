@@ -4,7 +4,6 @@ GitHub Readme.md Report
 https://drive.google.com/file/d/1njAntgKOZxLf-Ph7eNCHOChekKgX-NRb/view?usp=sharing
 
 
-https://youtu.be/GtP9IKx2jq4
 <!-- TABLE OF CONTENTS -->
 <details open="open">
   <summary><h2 style="display: inline-block">Table of Contents</h2></summary>
