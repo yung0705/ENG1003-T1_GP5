@@ -244,7 +244,7 @@ In this task, we also need to find out which type of model aircraft achieves the
 ### Methodology：
 The goal of this task is to design a new cost area that can reduce the cost. Before adding code, I need to understand the original code. First, I need to set new attributes of AStarPlanner, which are minus_cost_x, minus_cost_y, C_P, and Delta_P. Then, I need to add ```+self.C_P*self.Delta_P``` to the cost-calculating equation for this new area.
 ![螢幕擷取畫面 2021-11-10 185614](https://user-images.githubusercontent.com/89887457/141402794-795b78c4-e84d-4518-b386-01362e1d1706.png)
-![螢幕擷取畫面 2021-11-10 185839](https://user-images.githubusercontent.com/89887457/141402758-0be1c4ec-cb54-4e8a-b66b-8081e3bdcb7f.png)
+![螢幕擷取畫面 2021-11-10 185839](https://user-images.githubusercontent.com/89887457/141421855-67f6957d-5a7a-46e2-865c-10691a52be3a.png)
 
 Also, I need to change the motion model because more things need to be calculated. For the new situation, which is when the aircraft goes through the minus-cost area, I added
 ```
@@ -273,9 +273,10 @@ plt.plot(minus_cost_x, minus_cost_y, "ob")
 
 ### Result：
 After designed a suitable location for the minus-cost area to make it minimizes the cost as much as possible. The cost from 3356.469824904021
-![2021-11-12 (1)](https://user-images.githubusercontent.com/89887457/141403346-33105142-4a8e-4adf-82e9-7df8434566a4.png)
+![1](https://user-images.githubusercontent.com/89887457/141421780-6e959457-9899-4a3d-bf8d-0709176124f7.png)
 decreased to 2685.6271124294003
-![2021-11-12](https://user-images.githubusercontent.com/89887457/141403338-971fbe20-4699-4166-b3f6-975cb3c5b51b.png)
+![2](https://user-images.githubusercontent.com/89887457/141421757-ab664984-c203-4b4e-825b-2f2a96cb5659.png)
+
 
 ### Discussion：
 We think the difficult part of this task is that we need to read and understand the code. It is because this task is different from previous tasks. In this task, we are not only changing the numbers but also adding some new code. So understanding the code is necessary for preventing errors and incorrect outcomes. For example, in line 167, if I just follow the code from line 156 or 162, we can see that the path is evading the minus-cost area. This result does not make sense.
